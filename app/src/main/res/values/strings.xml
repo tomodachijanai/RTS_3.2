@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RTS_perceptron</string>
+    <string name="tVw1_caption">w1</string>
+    <string name="tVw2_caption">w2</string>
+    <string name="tVelapsed_caption">elapsed (ms)</string>
+    <string name="tViter_caption">iterations</string>
+    <string name="tVresult_caption">result</string>
+    <string name="btn_caption">TRAIN</string>
+    <string name="res_success">SUCCESS</string>
+    <string name="res_failure">FAILED DEADLINE</string>
+    <string-array name="spinner_lrate_arr">
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>0.05</item>
+        <item>0.1</item>
+        <item>0.2</item>
+        <item>0.3</item>
+    </string-array>
+    <string-array name="spinner_time_deadline_arr">
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="spinner_maxiter_arr">
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+</resources>
