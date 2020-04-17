@@ -2,6 +2,8 @@ package com.yaroslav_f.rts_perceptron;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -64,6 +66,16 @@ public class MainActivity extends AppCompatActivity {
         tViter.setText(String.format("iterations: %s", perceptron.iter));
         if (res) {
             tVresult.setText(R.string.res_success);
+            new AlertDialog.Builder(MainActivity.this)
+                    .setTitle("Finished successfully")
+                    .setMessage(String.format("iterations: %s", perceptron.iter))
+                    .setCancelable(true)
+                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    }).show();
         } else {
             tVresult.setText(R.string.res_failure);
         }
